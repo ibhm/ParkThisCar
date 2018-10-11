@@ -28,7 +28,7 @@ import com.google.maps.model.LatLng;
 public class GoogleAPI{
 	
 	public static String Location(double a, double b) throws ApiException, InterruptedException, IOException{
-		GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyBBqdKvyXB7h-pfQl0OolfxNThB3KZO_6g"
+		GeoApiContext context = new GeoApiContext.Builder().apiKey("API KEY"
 ).build();
 	    LatLng latlng = new LatLng(a, b);
 	    GeocodingResult[] results = GeocodingApi.newRequest(context).latlng(latlng).await();
@@ -39,7 +39,7 @@ public class GoogleAPI{
 	
 	public static String LatAPI(String address) throws ApiException, InterruptedException, IOException{
 		String address2 = (address + "Seattle WA USA");
-		GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyAPTRWi9d3eUjVp4mox8EUVoDxv44BJuLo"
+		GeoApiContext context = new GeoApiContext.Builder().apiKey("API KEY"
 ).build();
 		GeocodingResult[] results =  GeocodingApi.geocode(context,
 		   address2).await();
@@ -50,7 +50,7 @@ public class GoogleAPI{
 	
 	public static String LngAPI(String address) throws ApiException, InterruptedException, IOException{
 		String address2 = (address + "Seattle WA USA");
-		GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyCowTY4tPr7nXcJOaEWg1RJoYfATWqeswo"
+		GeoApiContext context = new GeoApiContext.Builder().apiKey("API KEY"
 ).build();
 		GeocodingResult[] results =  GeocodingApi.geocode(context,
 		   address2).await();
@@ -62,7 +62,7 @@ public class GoogleAPI{
 	
 	public static String CoordConvert(String address, String postcode) throws ApiException, InterruptedException, IOException{
 		String address2 = (address + "Seattle WA USA");
-		GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyDyWlXPtOMcT2lsMylwTKGu0lhevkE_Io4"
+		GeoApiContext context = new GeoApiContext.Builder().apiKey("API KEY"
 ).build();
 		GeocodingResult[] results =  GeocodingApi.geocode(context,
 		   address2).await();
